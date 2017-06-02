@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Django + Riot.js + Django Rest Framework + Datatables Example</title>
+  {% load staticfiles %}
+
+  <!-- riot tags -->
+  <script type="riot/tag" src="{% static 'riot-tag/dtable.tag' %}"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/riot@3.5/riot.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/riot@3.5/riot+compiler.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+
+</head>
+
+<body>
+  <dtable></dtable>
+
+  <!-- mount this app -->
+  <script>
+    riot.mount('dtable')
+  </script>
+
+  <style>
+    body {
+      margin: 0
+    }
+  </style>
+</body>
+
+</html>

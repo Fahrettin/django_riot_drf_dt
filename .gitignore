@@ -1,0 +1,12 @@
+*.pot
+*.py[co]
+*.pyc
+.tox/
+__init__.py
+__pycache__
+MANIFEST
+env
+*.history
+db.sqlite3
+migrations
+.vscode
